@@ -1,0 +1,18 @@
+
+.swiper-wrapper {
+    width: 800px;
+    height: 600px;
+    
+  }
+
+  .swiper-button-next:after{
+
+  color: red
+
+
+  }
+
+  .swiper-button-prev:after{
+    color: red;
+  }
+
