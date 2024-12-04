@@ -11,6 +11,12 @@ body{
     background-color:white;
 }
 
+
+.header .fa{
+    display: none;
+  }
+  
+
 .header img{
 
     width: 68px;
@@ -123,7 +129,7 @@ border-bottom: 4px solid #8b8b8b;
 
 
 
-.main .pic01{background-image: url(../img/pic/pic01.jpg);}
+.main .pic01{background-image: url(../img/pic/pic01.jpg); }
 .main .pic02{background-image: url(../img/pic/pic02.jpg);}
 .main .pic03{background-image: url(../img/pic/pic03.jpg);}
 .main .pic04{background-image: url(../img/pic/pic04.jpg);}
@@ -143,4 +149,163 @@ border-bottom: 4px solid #8b8b8b;
     padding-top: 38px;
     text-align: center;
     margin: 0 auto;
+}
+
+
+
+
+
+
+/* --------------斷點430--------------- */
+
+@media screen and (max-width: 430px) {
+
+    .header{
+        margin: 0 auto;
+        height: 80px;
+        position: relative;
+      
+    }
+
+     .header .fa{
+    display: block;
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+
+
+.header ul{
+
+    display: none;
+    float: none;
+}
+
+.header .fa:hover ~ ul{
+    display: block;
+}
+
+
+
+/*   
+  .header ul{
+    display: none;
+    background-color: #ffffff;
+    position: absolute;
+    right: 0;
+    top: 80px;
+    width: 100%;
+   
+  } */
+
+  /* .header .fa:hover ~ ul{
+    display: block;
+    position: absolute;
+  }
+     */
+    .header a img{
+        width: 50px;
+    }
+
+    .header li {
+        width: 100%; /* 確保li區塊能夠全寬顯示 */
+        padding-left: 0;
+        text-align: center; /* 使內容居中 */
+    }
+
+    .header li a {
+        width: 100%; /* 讓連結寬度擴展到整個li */
+    }
+
+
+  
+
+
+
+
+    /* -----------------main--------------------- */
+    .main li{
+
+      
+        width: 374px;
+        height: 250px;
+        margin: 0 auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+    }
+
+    img{
+        width: 100%;
+    }
+
+    .main .pic01{background-image: url(../img/430/pic01.jpg);}
+    .main .pic02{background-image: url(../img/430/pic02.jpg);}
+    .main .pic03{background-image: url(../img/430/pic03.jpg);}
+    .main .pic04{background-image: url(../img/430/pic04.jpg);}
+    .main .pic05{background-image: url(../img/430/pic05.jpg);}
+    .main .pic06{background-image: url(../img/430/pic06.jpg);}
+    .main .pic07{background-image: url(../img/430/pic07.jpg);}
+
+
+     .main a {
+        text-decoration: none;
+        width: 374px;
+        height: 250px;
+        display: block;
+        position: relative; /* 確保在小螢幕上能夠點擊 */
+        z-index: 10; /* 保證它位於最上層，避免被其他元素遮擋 */
+    }
+
+
+    .main h3{
+
+        position: absolute;
+    
+        left: 15px;
+        bottom: 8px;
+        line-height: 1.5;
+        color: white;
+        font-weight: bold;
+        transition: .5s;
+    
+     
+    }
+
+    /* .main a{
+        background-color: #00000073;
+    } */
+
+    .main ul{
+        clear: both;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------斷點390--------------------------- */
+
+@media screen and (max-width: 390px) {
+
+
+
+ 
+
+
+
+
+
+
 }
