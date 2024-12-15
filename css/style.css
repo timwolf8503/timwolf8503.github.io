@@ -6,9 +6,15 @@ body{
     text-height: 1.6;
 }
 
+.top{
+
+  
+}
+
 .header{
     height: 100px;
     background-color:white;
+    z-index: 30;
 }
 
 
@@ -71,7 +77,10 @@ border-bottom: 4px solid #8b8b8b;
 /* -------------main----------------- */
 
 
-.main{}
+.main{
+
+ overflow: hidden;
+}
 
 .main ul{
 display: flex;

@@ -10,7 +10,17 @@ body{
     width: 100%;
     height: 100px;
     background-color:white;
+    z-index: 10;
 }
+
+.header .fa{
+    display: none;
+  }
+  
+  input {
+    display: none;
+  }
+
 
 .header img{
 
@@ -198,4 +208,200 @@ margin-left: 75px;
     padding-top: 38px;
     text-align: center;
     margin: 0 auto;
+}
+
+
+/* --------------斷點430--------------- */
+
+@media screen and (max-width: 430px) {
+
+    .header{
+        margin: 0 auto;
+        height: 80px;
+        position: relative;
+      
+    }
+
+     .header .fa{
+    display: block;
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+
+
+.header .menu{
+
+   
+    float: none;
+    margin-top: 10px;
+    max-height: 0;
+    overflow: hidden;
+    background-color:rgba(148, 148, 148, 0.493);
+  
+ 
+}
+
+input:checked ~ .menu {
+    
+    max-height: 300px;
+   
+  }
+
+
+
+
+
+    .header a img{
+        width: 50px;
+    }
+
+    .header li {
+        width: 100%; /* 確保li區塊能夠全寬顯示 */
+        padding-left: 0;
+        text-align: center; /* 使內容居中 */
+     
+    }
+
+    .header li a {
+        width: 100%; /* 讓連結寬度擴展到整個li */
+       
+            display: block;
+            font-size: 16px;
+            color: #ffffff;
+
+            text-decoration: none;
+            line-height: 4;
+            text-align: center;
+            /* border: 1px solid red; */
+            
+            
+      
+    }
+
+
+  
+
+
+
+
+    /* -----------------main--------------------- */
+
+
+.wrapper{
+
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.wrapper .main h1{
+
+    font-size: 35px;
+    left: 80px;
+    top: 83px;
+}
+
+.main img{
+    width: 100%;
+}
+
+
+/* --------text-------- */
+
+.topline{
+
+    width: 385px;
+}
+
+.text {
+
+width: 100%;
+padding-top: 50px;
+
+
+
+
+}
+
+.text h3{
+
+    font-size: 18px;
+    margin: 30px 25px 30px 25px ;
+}
+
+.bottomline{
+
+
+    padding-top: 0;
+
+    width: 385px;
+}
+
+
+
+/* ---------draft------------- */
+
+.draft{
+
+    height: 1600px;
+}
+
+.draft li img {
+
+    width: 100%;
+}
+
+.draft li{
+
+  
+  
+}
+
+.draft p{
+    top: 11px;
+    left: 158px;
+
+}
+
+
+.Completed{
+
+height: 1800px;
+
+
+}
+
+.Completed li{
+    margin-bottom: 118px;
+    margin-left: 66px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------斷點390--------------------------- */
+
+@media screen and (max-width: 390px) {
+
+
+
+ 
+    .header a img{
+        width: 50px;
+    }
+
+
+
+
+
 }
