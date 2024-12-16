@@ -12,6 +12,14 @@ body{
     background-color:white;
 }
 
+.header .fa{
+    display: none;
+  }
+  
+  input {
+    display: none;
+  }
+
 .header img{
 
     width: 68px;
@@ -123,8 +131,8 @@ border-bottom: 4px solid #8b8b8b;
 
 .pic03{
     overflow: hidden;
-    width: 600px;
-    height: 300px;
+    width: 50%;
+    height: 313px;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -153,4 +161,123 @@ top: -110px;
     padding-top: 38px;
     text-align: center;
     margin: 0 auto;
+}
+
+/* --------------斷點430--------------- */
+
+@media screen and (max-width: 430px) {
+
+    .header{
+        margin: 0 auto;
+        height: 80px;
+        position: relative;
+      
+    }
+
+     .header .fa{
+    display: block;
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+
+
+.header .menu{
+
+   
+    float: none;
+    margin-top: 10px;
+    max-height: 0;
+    overflow: hidden;
+    background-color:rgba(148, 148, 148, 0.493);
+  
+ 
+}
+
+input:checked ~ .menu {
+    
+    max-height: 300px;
+   
+  }
+
+
+
+
+
+    .header a img{
+        width: 50px;
+    }
+
+    .header li {
+        width: 100%; /* 確保li區塊能夠全寬顯示 */
+        padding-left: 0;
+        text-align: center; /* 使內容居中 */
+     
+    }
+
+    .header li a {
+        width: 100%; /* 讓連結寬度擴展到整個li */
+       
+            display: block;
+            font-size: 16px;
+            color: #ffffff;
+
+            text-decoration: none;
+            line-height: 4;
+            text-align: center;
+            /* border: 1px solid red; */
+            
+            
+      
+    }
+
+
+
+    .wrapper{
+        width: 100%;
+    }
+
+    .main{
+        height: 969px;
+    }
+
+    .main ul{
+        width: 100%;
+    }
+
+    .main img {
+        width:72%;
+        
+    }
+
+
+    .pic02{
+      
+        width: 55%;
+        position: relative;
+        top: 12px;
+    }
+
+    .img02{
+
+        position: absolute;
+        left: -25px;
+        top: -1px;
+    }
+
+    .pic03{
+        overflow: hidden;
+        width: 51%;
+        height: 292px;
+        position: absolute;
+        left: -2px;
+        bottom: -318px;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .main img {
+        width: 67%;
+    }
+
 }

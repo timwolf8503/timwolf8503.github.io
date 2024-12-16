@@ -455,3 +455,41 @@ input:checked ~ .menu {
         top: -28px;
     }
 }
+
+/* ---------------斷點390--------------------------- */
+
+@media screen and (max-width: 390px) {
+
+
+    .main .icon {
+        width: 396px;
+     
+    }
+
+    .topline{
+        width: 350px;
+    }
+
+    .chinese{
+        font-size: 14px;
+    }
+
+    .english{
+        font-style: 14px;
+    }
+
+
+    .bottomline{
+        padding-top: 0;
+        width: 350px;
+        
+    }
+
+
+
+
+
+
+
+
+}
