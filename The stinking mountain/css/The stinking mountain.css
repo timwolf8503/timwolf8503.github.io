@@ -428,6 +428,44 @@ top: 920px;
 
 
 
+    .draft{
+        height: 1005px;
+        
+    }
+
+ /* --------text-------- */
+
+ .topline{
+
+    padding-top: 0;
+    width: 330px;
+}
+
+.text {
+
+width: 100%;
+padding-top: 50px;
+height: 368px;
+
+
+
+
+}
+
+.text h3{
+
+    font-size: 14px;
+    margin: 30px 25px 30px 25px ;
+}
+
+.bottomline{
+
+
+    padding-top: 0;
+
+    width: 330px;
+}
+
 
 
 }

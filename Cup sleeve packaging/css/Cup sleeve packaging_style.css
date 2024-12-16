@@ -12,6 +12,14 @@ body{
     background-color:white;
 }
 
+.header .fa{
+    display: none;
+  }
+  
+  input {
+    display: none;
+  }
+
 .header img{
     
     width: 68px;
@@ -98,7 +106,7 @@ background-color: white;
 
     animation: ani01 3s steps(3,end) infinite; 
 }
-
+/* 
 @keyframes ani01{
 
     0%{
@@ -109,7 +117,7 @@ background-color: white;
     }
 
 
-}
+} */
 
 
 
@@ -161,17 +169,6 @@ background-color: white;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* ------------foot----------------- */
 
 .foot ul{
@@ -185,4 +182,203 @@ background-color: white;
     padding-top: 38px;
     text-align: center;
     margin: 0 auto;
+}
+
+
+
+/* --------------斷點430--------------- */
+
+@media screen and (max-width: 430px) {
+
+    .header{
+        margin: 0 auto;
+        height: 80px;
+        position: relative;
+      
+    }
+
+     .header .fa{
+    display: block;
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+
+
+.header .menu{
+
+   
+    float: none;
+    margin-top: 10px;
+    max-height: 0;
+    overflow: hidden;
+    background-color:rgba(148, 148, 148, 0.493);
+  
+ 
+}
+
+input:checked ~ .menu {
+    
+    max-height: 300px;
+   
+  }
+
+
+
+
+
+    .header a img{
+        width: 50px;
+    }
+
+    .header li {
+        width: 100%; /* 確保li區塊能夠全寬顯示 */
+        padding-left: 0;
+        text-align: center; /* 使內容居中 */
+     
+    }
+
+    .header li a {
+        width: 100%; /* 讓連結寬度擴展到整個li */
+       
+            display: block;
+            font-size: 16px;
+            color: #ffffff;
+
+            text-decoration: none;
+            line-height: 4;
+            text-align: center;
+            /* border: 1px solid red; */
+            
+            
+      
+    }
+
+/* -------------------------------- */
+
+
+
+.wrapper {
+
+width: 100%;
+
+}
+
+.gif01{
+    height: 405px;
+}
+
+.wrapper .gif01 img{
+
+    width: 1291px;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    animation: ani03 3s steps(3,end) infinite; 
+
+}
+
+@keyframes ani03{
+
+    0%{
+        left: 0;
+    }
+    100%{
+        left: -1290px;
+    }
+
+}
+
+
+.gif02{
+    height: 455px;
+}
+
+
+.wrapper .gif02 img{
+
+    width: 1291px;
+
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    animation: ani04 3s steps(3,end) infinite; ;
+}
+
+@keyframes ani04{
+
+    0%{
+        left: 0;
+    }
+    100%{
+        left: -1291px;
+    }
+
+
+
+
+
+}
+
+}
+
+
+/* ---------------斷點390--------------------------- */
+
+
+
+@media screen and (max-width: 390px){
+
+    .wrapper .gif01 img{
+
+        width: 1172px;
+
+        position: absolute;
+        left: 0;
+        top: 0;
+    
+        animation: ani05 3s steps(3,end) infinite; ;
+
+
+    }
+
+    @keyframes ani05{
+
+        0%{
+            left: 0;
+        }
+        100%{
+            left: -1170px;
+        }
+    
+    }
+
+    .wrapper .gif02 img{
+
+        width: 1168px;
+    
+    
+        position: absolute;
+        left: 0;
+        top: 0;
+    
+        animation: ani06 3s steps(3,end) infinite; ;
+    }
+    
+    @keyframes ani06{
+    
+        0%{
+            left: 0;
+        }
+        100%{
+            left: -1167px;
+        }
+    
+    
+    }
+
 }
